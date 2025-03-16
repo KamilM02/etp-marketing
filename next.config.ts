@@ -2,9 +2,13 @@ import { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "export",
-  distDir: "out",
-  basePath: "/etp-marketing",
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH,
+  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH + "/",
+  distDir: "out/etp-marketing",
   trailingSlash: true,
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
