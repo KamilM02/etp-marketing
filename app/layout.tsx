@@ -1,6 +1,8 @@
 import "./globals.css";
 import Header from "./components/Header";
 import FooterComponent from "./components/Footer";
+import { Provider } from "react-redux";
+import { store } from "../redux/store";
 
 
 export const metadata = {
@@ -12,21 +14,19 @@ export const metadata = {
 };
 
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
       </head>
       <body className="bg-white flex flex-col min-h-screen w-full overflow-x-hidden">
-        <Header />
-        <main className="flex-1 flex items-center justify-center p-4">
-          {children}
-        </main>
-        <FooterComponent />
+        <Provider store={store}>
+          <Header />
+          <main className="flex-1 flex items-center justify-center p-4">
+            {children}
+          </main>
+          <FooterComponent />
+        </Provider>
       </body>
     </html>
   );
