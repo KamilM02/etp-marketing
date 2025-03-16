@@ -1,7 +1,9 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: "export",
+  distDir: "out",
+  basePath: "/event-ticketing-platform/kamil",
+  trailingSlash: true,
 };
 
-export default nextConfig;
+module.exports = nextConfig;
