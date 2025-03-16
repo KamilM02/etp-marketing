@@ -1,9 +1,10 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+import { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
   output: "export",
   distDir: "out",
-  basePath: "/event-ticketing-platform/kamil",
+  basePath: "/event-ticketing-platform",
   trailingSlash: true,
 };
 
-module.exports = nextConfig;
+export default nextConfig;
