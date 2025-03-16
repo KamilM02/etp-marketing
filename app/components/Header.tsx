@@ -25,7 +25,7 @@ export default function Header() {
           Create Event
         </Navbar.Link>
         <Navbar.Link
-          href={`${process.env.NEXT_PUBLIC_BASE_PATH}/marketing`} className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500">
+          href="/marketing" className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500">
           Marketing
         </Navbar.Link>
         <Navbar.Link href="#" className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500">
