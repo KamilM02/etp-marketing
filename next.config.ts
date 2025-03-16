@@ -3,7 +3,7 @@ import { NextConfig } from "next";
 const nextConfig: NextConfig = {
   output: "export",
   distDir: "out",
-  basePath: "/event-ticketing-platform",
+  basePath: "/etp-marketing",
   trailingSlash: true,
 };
 
