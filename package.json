@@ -1,9 +1,9 @@
 {
-  "name": "event-ticketing-platform",
+  "name": "etp-platform",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d out"
