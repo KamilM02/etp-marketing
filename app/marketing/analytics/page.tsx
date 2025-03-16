@@ -46,7 +46,7 @@ export default function AnalyticsPage() {
 
   return (
     <div className="min-h-screen w-full">
-      <header className="w-full bg-blue-800 text-white py-8 px-8">
+      <header className="w-full bg-blue-800 text-white py-12 px-8">
         <div className="text-center">
           <h1 className="text-5xl font-extrabold drop-shadow-md">Analytics Dashboard</h1>
           <p className="mt-4 text-2xl">
